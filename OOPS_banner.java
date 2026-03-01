@@ -5,7 +5,7 @@ public class OOPS_BANNER_APP {
      * string concatenation to practice literal handling.
      *
      * @param args unused
-     * @author Shivam Kumar
+     * @author Ashutosh
      * @version 1.0
      */
     public static void main(String[] args) {
