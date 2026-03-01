@@ -5,57 +5,22 @@ public class OOPS_BANNER_APP {
      * string concatenation to practice literal handling.
      *
      * @param args unused
-     * @author Shivam Kumar
+     * @author Ashutosh
      * @version 1.0
      */
+    public class OOPSBannerApp {
     public static void main(String[] args) {
-        String[] oPattern = buildO();
-        String[] pPattern = buildP();
-        String[] sPattern = buildS();
-        String[][] letters = { oPattern, oPattern, pPattern, sPattern };
-        for (int row = 0; row < oPattern.length; row++) {
-            StringBuilder line = new StringBuilder();
-            for (String[] letter : letters) {
-                line.append(letter[row]).append("  ");
-            }
+        String[] lines = new String[5];
+
+        lines[0] = String.join("  ", " *** ", " *** ", "**** ", " ****");
+        lines[1] = String.join("  ", "*   *", "*   *", "*   *", "*    ");
+        lines[2] = String.join("  ", "*   *", "*   *", "**** ", " *** ");
+        lines[3] = String.join("  ", "*   *", "*   *", "*    ", "    *");
+        lines[4] = String.join("  ", " *** ", " *** ", "*    ", "**** ");
+
+        for (String line : lines) {
             System.out.println(line);
         }
     }
-
-    private static String[] buildO() {
-        return new String[]{
-            " ***** ",
-            "*     *",
-            "*     *",
-            "*     *",
-            "*     *",
-            "*     *",
-            " ***** "
-        };
-    }
-
-    private static String[] buildP() {
-        return new String[]{
-            "****** ",
-            "*     *",
-            "*     *",
-            "****** ",
-            "*      ",
-            "*      ",
-            "*      "
-        };
-    }
-
-    private static String[] buildS() {
-        return new String[]{
-            " ***** ",
-            "*      ",
-            "*      ",
-            " ***** ",
-            "      *",
-            "      *",
-            " ***** "
-        };
-    }
 }
-
+ 
